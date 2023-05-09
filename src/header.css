@@ -53,5 +53,5 @@ html, body {
 }
 
 .tab:hover:not(.tab-selected) {
-    background-color: rgb(27, 2, 2);
+    background-color: rgba(44, 7, 7, 0.747);
 }
