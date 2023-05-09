@@ -1,3 +1,5 @@
+import './menuPage.css';
+
 export default function loadMenuTab() {
   const headingText = 'Lorem ipsum dolor';
   const aboutSectionText = `Menu`;

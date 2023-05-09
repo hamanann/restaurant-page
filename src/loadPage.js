@@ -1,4 +1,5 @@
 import loadHome from './loadHome';
+import './header.css';
 
 export default function loadPage() {
   const content = document.querySelector('#content');

@@ -1,0 +1,16 @@
+#main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    flex: 1;
+}
+
+
+.about-container {
+    padding: 50px 10%;
+    
+    background-color: rgba(15, 15, 15, 0.849);
+    color: rgb(255, 248, 240);
+    font-size: 22px;
+}

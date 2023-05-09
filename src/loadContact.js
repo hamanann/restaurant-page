@@ -1,3 +1,5 @@
+import './contactPage.css';
+
 export default function loadContactTab() {
   const contactContainer = document.createElement('div');
   contactContainer.classList.add('contact-container');

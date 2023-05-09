@@ -1,3 +1,5 @@
+import './homePage.css';
+
 export default function loadHomeTab() {
   const headingText = 'Lorem ipsum dolor';
   const aboutSectionText = `Integer venenatis fermentum ullamcorper. Curabitur id viverra purus.
