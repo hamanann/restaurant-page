@@ -8,6 +8,9 @@ html, body {
 }
 
 #content {
+    display: flex;
+    flex-direction: column;
+
     height: 100%;
 
     background: url(restaurant.jpg);
@@ -19,6 +22,7 @@ html, body {
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     background-color: rgba(107, 27, 27, 0.801);
 
@@ -26,23 +30,77 @@ html, body {
     font-weight: 400;
     color: rgb(255, 248, 240);
 
-    padding: 32px 15% 32px 32px;
+    padding: 0px 15% 0px 32px;
+    height: 80px;
+
 }
 
-.header-menu {
+
+.header-tabs {
     display: flex;
-    gap: 50px;
-    justify-content: flex-end;
+    gap: 10px;
+    justify-content: flex-start;
+    /* margin-top: 20px; */
 }
 
-.about {
-    padding: 100px min(20%, 300px);
-    position: fixed;
-    bottom: 100px;
+.tab {
+    padding: 15px;
+    border-radius: 10px;
+}
 
-    background-color: rgba(15, 15, 15, 0.849);
+.tab-selected {
+    background-color: rgba(201, 159, 159, 0.527);
+}
 
-    color: rgb(255, 248, 240);
-    font-size: 24px;
+.tab:hover:not(.tab-selected) {
+    background-color: rgb(27, 2, 2);
+}
+
+#main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    flex: 1;
+}
+
+.about-container {
+    padding: 50px 10%;
     
+    background-color: rgba(15, 15, 15, 0.849);
+    color: rgb(255, 248, 240);
+    font-size: 22px;
+}
+
+.contact-container {
+    width: 500px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.945);
+    margin: 50px auto;
+    padding: 50px;
+}
+
+.contact-heading {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(107, 27, 27, 0.801);
+    margin-bottom: 20px;
+}
+
+.contact-details-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.contact-details-container > span:not(.contact-details-heading) {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.contact-details-heading {
+    font-size: 32px;
+    color: rgba(107, 27, 27, 0.801);
+    margin-bottom: 5px;
 }
